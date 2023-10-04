@@ -4,50 +4,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.DolgushinVA.Sprint2.Task1.V29.Lib;
-namespace Tyuiu.DolgushinVA.Sprint2.Task1.V29
+using Tyuiu.DolgushinVA.Sprint2.Task2.V16.Lib;
+namespace Tyuiu.DolgushinVA.Sprint2.Task2.V16
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
-
-            int a = 657;
-            int b = 654;
-            int c = 657;
-            int d = 657;
-            bool[] res = new bool[6];
-            res = ds.GetLogicOperations(a, b, c, d);
-
             Console.Title = "Спринт #1 | Выполнил: Долгушин В. А. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #29                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #16                                                             *");
             Console.WriteLine("* Выполнил: Долгушин Вадим Алексеевич | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=)         *");
-            Console.WriteLine("* и логических операций (|, &, ||, &&, !, ^), а также арифметических      *");
-            Console.WriteLine("* выражений, которая вернет логическую последовательность(массив):        *");
-            Console.WriteLine("* (True, True, True, False, True, True), при a = 657, b = 654,            *");
-            Console.WriteLine("* c = 657, d = 657.                                                       *");
+            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры  *");
+            Console.WriteLine("* и вычисляет находится ли точка с координатами X,Y в заштрихованной      *");
+            Console.WriteLine("* области.                                                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("A = " + a);
-            Console.WriteLine("B = " + b);
-            Console.WriteLine("C = " + c);
-            Console.WriteLine("D = " + d);
+
+            Console.WriteLine("Введите значение переменной X: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение переменной Y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            DataService ds = new DataService();
+            var res = ds.CheckDotInShadedArea(x, y);
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            for (int i = 0; i < 6; i++)
+            if (res)
             {
-                Console.WriteLine(res[i]);
+                Console.WriteLine("Точка находится в заштрихованной области");
             }
+            else
+            {
+                Console.WriteLine("Точка не находится в заштрихованной области");
+            }
+
             Console.ReadKey();
         }
     }
