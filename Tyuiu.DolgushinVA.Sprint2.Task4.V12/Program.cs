@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using using Tyuiu.DolgushinVA.Sprint2.Task4.V12.Lib;
+using Tyuiu.DolgushinVA.Sprint2.Task4.V12.Lib;
 namespace Tyuiu.DolgushinVA.Sprint2.Task4.V12
 {
     class Program
