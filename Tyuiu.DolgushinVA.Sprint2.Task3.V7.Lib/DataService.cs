@@ -12,7 +12,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task3.V7.Lib
         public double Calculate(double x)
         {
             double y = 0;
-            if (x > 0)
+            if ((x > 0) && (x != 1))
             {
                 y = x * Math.Pow((Math.Pow(x, 2) + 1) / (x - 1), x);
             }
@@ -30,7 +30,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task3.V7.Lib
                     }
                     else
                     {
-                        if (x < -11)
+                        if (x <= -11)
                         {
                             y = Math.Pow(x, 4) - (3 / x);
                         }

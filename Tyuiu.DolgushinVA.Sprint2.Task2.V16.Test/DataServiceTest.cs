@@ -13,7 +13,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task2.V16.Test
             DataService ds = new DataService();
             int x = 3;
             int y = 3;
-            var res = ds.CheckDotInShadedArea(x, y);
+            bool res = ds.CheckDotInShadedArea(x, y);
             bool wait = true;
             Assert.AreEqual(wait, res);
         }
