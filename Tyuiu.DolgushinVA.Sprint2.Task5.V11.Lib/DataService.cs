@@ -29,7 +29,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task5.V11.Lib
                         n = 1;
                         m++;
                     }
-                    res = $"{n:D2}.{m:D2}.{g}";
+                    res = $"{n:D2}.{m:D2}.{g:D4}";
                     break;
 
                 case 4:
@@ -45,7 +45,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task5.V11.Lib
                         n = 1;
                         m++;
                     }
-                    res = $"{n:D2}.{m:D2}.{g}";
+                    res = $"{n:D2}.{m:D2}.{g:D4}";
                     break;
 
                 case 2:
@@ -58,7 +58,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task5.V11.Lib
                         n = 1;
                         m++;
                     }
-                    res = $"{n:D2}.{m:D2}.{g}";
+                    res = $"{n:D2}.{m:D2}.{g:D4}";
                     break;
 
                 case 12:
@@ -72,7 +72,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task5.V11.Lib
                         m = 1;
                         g++;
                     }
-                    res = $"{n:D2}.{m:D2}.{g}";
+                    res = $"{n:D2}.{m:D2}.{g:D4}";
                     break;
 
                 default:
