@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 using Tyuiu.DolgushinVA.Sprint2.Task0.V15.Lib;
