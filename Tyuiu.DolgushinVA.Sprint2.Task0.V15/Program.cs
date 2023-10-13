@@ -18,7 +18,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task0.V15
             bool[] res = new bool[6];
             res = ds.GetCompareOperations(x, y);
 
-            Console.Title = "Спринт #1 | Выполнил: Долгушин В. А. | ИИПб-23-3";
+            Console.Title = "Спринт #2 | Выполнил: Долгушин В. А. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Задание #0                                                              *");

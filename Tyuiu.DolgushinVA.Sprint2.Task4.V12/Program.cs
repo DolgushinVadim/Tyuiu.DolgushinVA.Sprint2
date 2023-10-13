@@ -13,7 +13,7 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task4.V12
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #1 | Выполнил: Долгушин В. А. | ИИПб-23-3";
+            Console.Title = "Спринт #2 | Выполнил: Долгушин В. А. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Задание #4                                                              *");

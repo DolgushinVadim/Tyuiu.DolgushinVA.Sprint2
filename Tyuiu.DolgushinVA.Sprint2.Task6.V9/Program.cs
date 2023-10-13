@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.DolgushinVA.Sprint2.Task3.V7.Lib;
-namespace Tyuiu.DolgushinVA.Sprint2.Task3.V7
+using Tyuiu.DolgushinVA.Sprint2.Task6.V9.Lib;
+namespace Tyuiu.DolgushinVA.Sprint2.Task6.V9
 {
     class Program
     {
@@ -16,27 +16,32 @@ namespace Tyuiu.DolgushinVA.Sprint2.Task3.V7
             Console.Title = "Спринт #2 | Выполнил: Долгушин В. А. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Долгушин Вадим Алексеевич | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет требуемое значение функции Y с    *");
-            Console.WriteLine("* использованием вложенных оператор if-else, где пользователь вводит      *");
-            Console.WriteLine("* значение переменной X с клавиатуры.                                     *");
+            Console.WriteLine("* Написать программу, которая использует оператор switch вычисляет        *");
+            Console.WriteLine("* дату следующего дня по заданным натуральными числами:                   *");
+            Console.WriteLine("* m (порядковый номер месяца) и n (число) (n и m не характеризуют         *");
+            Console.WriteLine("* 31 декабря).                                                            *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите значение переменной X: ");
-            double x = Convert.ToDouble(Console.ReadLine());
-            double res = ds.Calculate(x);
+            Console.WriteLine("Введите месяц: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите день: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            string res = ds.FindDateOfNextDay(m, n);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Значение функции = " + res);
+            Console.WriteLine("Дата следующего дня: " + res);
             Console.ReadKey();
         }
     }
